@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Map</title>
+</head>
+
+<body onload="onInit()">
+
+    <nav>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="user-setting.html">User settings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="map.html">Map</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="map" style="width:100%;height:500px;"></div>
+    <h5>Your Current Position is:</h5>
+    <table border="0">
+        <tr>
+            <td>Latitude</td>
+            <td id="latitude"></td>
+        </tr>
+        <tr>
+            <td>Longitude</td>
+            <td id="longitude"></td>
+        </tr>
+        <tr>
+            <td>Accuracy</td>
+            <td id="accuracy"></td>
+        </tr>
+        <tr>
+            <td>Timestamp</td>
+            <td id="timestamp"></td>
+        </tr>
+    </table>
+
+
+    <p id="locationError"></p>>
+
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/service/util.service.js"></script>
+    <script src="/js/main.controller.js"></script>
+    <script src="/js/service/place.service.js"></script>
+    <script src="/js/service/storage.service.js"></script>
+    <script src="/js/service/user.service.js"></script>
+    <script async                   
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy0xz2MmQf1eMfcFvkVZ5Py8HHtu1Ykbs">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pattaya&display=swap');
+
+body {
+    background-image: url(../img/earth-index.jpeg) !important;
+}
+
+header {
+    color: rgb(250, 93, 2);
+    font-family: 'Pattaya', sans-serif;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+h5 {
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.583) !important;
+}
+
+.hours-to-bd{
+    color: #007bff;
+    margin-top: 10px;
+    margin-left: 50px;
+}
